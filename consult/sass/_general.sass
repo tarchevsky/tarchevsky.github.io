@@ -1,0 +1,450 @@
+body
+	padding: 0
+	background-color: #EEEDE9
+	font-family: 'Montserrat', sans-serif
+	font-size: 16px
+	font-weight: 400
+	color: black
+
+h1
+	font-size: 44px
+	font-weight: 500
+	line-height: 57.5px
+
+h2
+	font-size: 30px
+	font-weight: 600
+	text-transform: uppercase
+	color: $accent-color
+	margin: 0
+
+h3, .h3
+	font-size: 24px
+	font-weight: 400
+	margin: 0
+
+h4
+	font-size: 18px
+	text-transform: uppercase
+	color: $accent-color
+	line-height: 132.9%
+	font-weight: 600
+	margin: 0
+
+h5
+	font-size: 16px
+	font-weight: 600
+	margin-block-start: 0
+	margin-block-end: 0
+	line-height: 132.9%
+	text-transform: uppercase
+
+p
+	line-height: 19.5px
+	margin-block-start: 0
+	margin-block-end: 0
+
+input, textarea
+	border: 0
+	border-bottom: 1px solid #777
+	background-color: rgba(0, 0, 0, 0)
+	text-transform: capitalize
+	padding: 15px 0
+	&::placeholder
+		opacity: 1
+		transition: .3s all
+	&:focus::placeholder
+			opacity: 0
+			background-color: transparent
+			transition: .3s all
+	&:focus
+		outline: none
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus
+		-webkit-box-shadow: 0 0 0px 1000px #EEEDE9 inset
+		-webkit-text-fill-color: #777
+
+input
+	&:first-child
+		margin-right: 19px
+
+.container
+	position: relative
+	max-width: 1170px
+	margin: 0 auto
+
+.button_1
+	width: 182px
+	height: 45px
+	border: 1px solid white
+	border-radius: 50px
+	color: white
+	transition: all .3s ease
+	background-color: $accent-color
+	&:hover
+		background-color: $sub-color
+		border-color: $sub-color
+	&:active
+		background-color: $active-color
+		border-color: $active-color
+
+	&_2
+		width: 182px
+		height: 45px
+
+	&_3
+		width: 182px
+		height: 45px
+
+	&_4
+		width: 182px
+		height: 45px
+
+	&_5
+		width: 182px
+		height: 45px
+
+.header
+	padding-top: 24px
+	padding-bottom: 24px
+	&_flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_hamburger
+			display: none
+
+.logo
+	display: none
+	width: 246px
+	height: 40px
+	font-size: 30px
+	font-weight: normal
+	color: white
+	&_mob
+		width: 246px
+		height: 40px
+		font-size: 30px
+		font-weight: normal
+		color: white
+
+.bg
+	background: url("../img/banner.jpg") center (center / cover) no-repeat
+	background-position-y: -100px
+
+.nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 342px
+	&_point,
+	&_tel
+		color: white
+		text-decoration: none
+		transition: all .3s ease
+		&:hover
+			color: $sub-color
+	&_tel
+		display: flex
+		align-items: center
+
+.header_hamburger
+	display: none
+
+.heading
+	margin-top: 195px
+	color: white
+	text-transform: uppercase
+	&_icons
+		margin-top: 90px
+	&_sub
+		margin-top: 30.86px
+		padding-bottom: 194px
+		color: white
+		max-width: 890px
+
+.advantages
+	margin-top: -120px
+	// background: url("../img/slice.jpg") center (right / cover) no-repeat
+	&_left_bg
+		background: linear-gradient(to right, #EEEDE9 50%, #2A3563 50%)
+	&_container
+		display: flex
+		justify-content: flex-start
+		align-items: center!important
+		flex-wrap: wrap
+		background-color: #EEEDE9
+		padding: 13px 0 38px
+.advantage
+	&_flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 25px
+		& > img
+			padding-right: 23px
+			width: 42.5px
+			height: 43.5px
+	&_1
+		margin-right: 61px
+	&_2
+		margin-right: 61px
+	&_3
+		margin-right: 61px
+	&_4
+		margin-right: 61px
+
+main > .container
+	border-bottom: 10px solid #EEEDE9
+
+.director
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	flex-wrap: wrap
+	padding-top: 115px
+	&_flex
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding-bottom: 41px
+	&_avatar
+		border-radius: 100px
+		margin-right: 24px
+	&_blockquote
+		display: flex
+		align-items: flex-start
+		max-width: 671px
+		& > img
+			margin-right: 53px
+	&_blockquote > .h3
+		padding-top: 8px
+
+.services, .about
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-wrap: wrap
+	margin-top: 43px
+	&_descr
+		max-width: 575px
+		line-height: 20px
+
+.about
+	margin-top: 173px
+	&-descr
+		text-align: left
+
+.services_swiper
+	margin-top: 91px
+	height: 635px
+
+// Группа офисных фоток
+
+.image-group
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	position: relative
+	margin-top: 74px
+	width: 100%
+	max-width: 100%
+	img
+		&:nth-child(1)
+			width: 13.58%
+		&:nth-child(2)
+			width: 35.17%
+		&:nth-child(3)
+			width: 13.58%
+			margin-top: 69px
+		&:nth-child(4)
+			width: 19.51%
+			margin-top: 69px
+
+.line
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	max-width: 1757px
+	& > div, img
+		padding-right: 70px
+		&:last-child
+			padding-right: 0!important
+	&_img
+		width: 64px
+		height: 26px
+	&_font, h6
+		font-family: Montserrat, sans-serif
+		font-style: italic
+		font-weight: normal
+		font-size: 1rem
+		line-height: 29px
+		text-align: center
+
+		/* sub grey */
+
+		color: #AAAAAA
+
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	
+// Section form
+
+.form
+	background: url('../img/form-bg.png') center (center/cover) no-repeat
+	min-height: 635px
+	&_inner
+		padding-top: 92px
+	&_descr
+		max-width: 447px
+		margin-top: 34px
+	&_contacts
+		margin-top: 78px!important
+		input
+			width: 230px
+	&_inner
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+	&_textarea
+		margin-top: 33px
+		resize: vertical
+		width: 483px
+	&_submit
+		margin-top: 68px
+		width: 281px
+		height: 45px
+		background: #344386
+		border-radius: 50px
+		border: none
+		color: #fff
+
+	// Поиск сотрудников
+
+.career
+	padding: 102px 0 98px
+	&_swiper
+		padding-top: 45px
+	&_date
+		display: flex
+		justify-content: flex-end
+		h5
+			font-size: 16px
+			font-weight: 600
+			text-align: center
+			text-transform: uppercase
+			color: #CFCFCF!important
+		&--number
+			font-size: 30px
+	&_title
+		margin-top: 51px
+		text-align: center
+	&_more
+		display: block
+		padding-top: 25px
+		font-size: 16px
+		text-decoration: none
+		line-height: 20px
+		color: #777777
+	&_resume
+		display: inherit
+		padding-top: 34px
+		font-size: 16px
+		line-height: 20px
+		color: #344386
+		text-align: right
+
+// Footer
+
+.footer
+		padding: 48px 0 38px
+		background-color: #202242
+		color: #fff
+		font-weight: 200
+		a
+			color: #fff
+		&_main
+			display: flex
+			justify-content: space-between
+		&_menu
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			&_item
+				padding-bottom: 20px
+		&_contacts
+			display: flex
+			flex-direction: column
+			&_adress
+				position: relative
+				display: block
+				padding-left: 28px
+				padding-bottom: 20px
+				&:before
+					display: block
+					content: ""
+					position: absolute
+					left: 0
+					top: 2px
+					height: 16px
+					width: 16px
+					background: url('../icons/location.svg') center center/cover no-repeat
+			&_hours
+				padding-bottom: 20px
+				font-style: italic
+				color: #8385A6
+			&_phone
+				position: relative
+				display: block
+				padding-bottom: 20px
+				padding-left: 28px
+				&:before
+					display: block
+					content: ""
+					position: absolute
+					left: 0
+					top: 2px
+					height: 16px
+					width: 16px
+					background: url('../icons/call.svg') center center/cover no-repeat
+			&_email
+				display: block
+				position: relative
+				padding-left: 28px
+				&:before
+					display: block
+					content: ""
+					position: absolute
+					left: 0
+					top: 2px
+					height: 16px
+					width: 16px
+					background: url('../icons/envelope.svg') center center/cover no-repeat
+		&_links
+			display: flex
+			justify-content: space-between
+			margin-top: 65px
+			&_item
+				color: #8385A6!important
+				text-decoration: none
+				&:nth-child(2)
+					width: 394px
+		&_subscribe
+			form
+				position: relative
+			input
+				margin-right: 0
+				width: 277px
+				caret-color: white
+			svg
+				position: absolute
+				fill: white
+				right: 0
+				bottom: 24px
+			&_email
+				border-color: #fff
+				&::placeholder
+					color: #fff
