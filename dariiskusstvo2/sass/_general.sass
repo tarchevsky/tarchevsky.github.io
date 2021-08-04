@@ -1,198 +1,215 @@
 // Main styles
-   
+	
 *
-   margin: 0
-   padding: 0
+	margin: 0
+	padding: 0
 
 body
-   position: relative
-   width: 100%
-   font-size: 14px
-   font-family: 'Gotham'
-   text-transform: uppercase
-   line-height: 1.4
-   color: #333
-   background-color: #fffff046
+	position: relative
+	width: 100%
+	font-size: 14px
+	font-family: 'Gotham'
+	text-transform: uppercase
+	line-height: 1.4
+	color: #333
+	background-color: #fffff046
 
 
 a
-   color: $gray
-   transition: .3s ease
-   &:hover
-      text-decoration: none
-      color: #333
+	color: $gray
+	transition: .3s ease
+	&:hover
+		text-decoration: none
+		color: #333
 
 // Header
 
 .header
-   position: absolute
-   top: 10
-   width: 100%
-   z-index: 100
-   background-color: #ffffffe3
-   border-bottom: 1px solid $gray
-   &__inner
-      display: flex
-      justify-content: space-between
-      align-items: flex-start
-      padding: 30px 0 20px
-   &__delivery
-      flex-grow: 0
-      padding-top: 3px
-      font-size: 12px
-   &__call
-      font-size: 12px
-      padding: 3px 20px 0
-   &__logo
-      display: flex
-      flex-direction: column
-      justify-content: center
-      flex-grow: 2
-      text-align: center
-      svg
-         height: 100px
-      img
-         align-self: center
-      p
-         margin: inherit
-         padding-top: 10px
-         font-size: 14px
-   &__account
-      padding-right: 20px
-      padding-top: 3px
-      text-align: right
-      font-size: 12px
-      color: $gray
-   &__cart
-      position: relative
-      flex-grow: 0
-      text-align: right
-      margin-right: 25px
-      &::after
-         display: inline-block
-         padding-top: 2px
-         content: '0'
-         background-color: $gold
-         border-radius: 50%
-         position: absolute
-         right: -35px
-         top: 0
-         height: 20px
-         width: 20px
-         text-align: center
-         vertical-align: middle
-         transform: translateX(-50%)
-         color: #fff
-         font-size: 10px
-      svg
-         fill: $gold
-         width: 18px
-         transition: .3s ease
-         &:hover
-            fill: #333
-         
+	position: absolute
+	top: 10
+	width: 100%
+	z-index: 100
+	background-color: #ffffffe3
+	border-bottom: 1px solid $gray
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding: 30px 0 20px
+	&__delivery
+		flex-grow: 0
+		padding-top: 3px
+		font-size: 12px
+	&__call
+		font-size: 12px
+		padding: 3px 20px 0
+	&__logo
+		display: flex
+		flex-direction: column
+		justify-content: center
+		flex-grow: 2
+		text-align: center
+		svg
+			height: 100px
+		img
+			align-self: center
+		p
+			margin: inherit
+			padding-top: 10px
+			font-size: 14px
+	&__svg
+		display: flex
+		justify-content: center
+	&__account
+		padding-right: 20px
+		padding-top: 3px
+		text-align: right
+		font-size: 12px
+		color: $gray
+	&__cart
+		position: relative
+		flex-grow: 0
+		text-align: right
+		margin-right: 25px
+		&::after
+			display: inline-block
+			padding-top: 2px
+			content: '0'
+			background-color: $gold
+			border-radius: 50%
+			position: absolute
+			right: -35px
+			top: 0
+			height: 20px
+			width: 20px
+			text-align: center
+			vertical-align: middle
+			transform: translateX(-50%)
+			color: #fff
+			font-size: 10px
+		svg
+			fill: $gold
+			width: 18px
+			transition: .3s ease
+			&:hover
+				fill: #333
+			
 .logo
-   height: 130px
+	height: 130px
 
 // Menu, nav
 
 .nav
-   display: flex
-   justify-content: space-around
-   padding-bottom: 20px
-   &__item
-      &>a
-         display: inline-block
-         position: relative
-         text-decoration: none
-         color: inherit
-         &:after
-            position: absolute
-            display: block
-            content: ''
-            height: 3px
-            width: 0%
-            left: 50%
-            z-index: 10000
-            transform: translateX(-50%)
-            background-color: #333
-            transition: width .2s ease-in-out
-         &:hover:after
-            width: 100%
+	display: flex
+	justify-content: space-around
+	padding-bottom: 20px
+	&__item
+		&>a
+			display: inline-block
+			position: relative
+			text-decoration: none
+			color: inherit
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				height: 3px
+				width: 0%
+				left: 50%
+				z-index: 10000
+				transform: translateX(-50%)
+				background-color: #333
+				transition: width .2s ease-in-out
+			&:hover:after
+				width: 100%
 
 // Presentation
 
 .presentation
-   position: relative
-   height: 100vh
-   background: linear-gradient(#0000008c,#0000008c), url('img/library2.jpg') center center/cover no-repeat
-   &__heading
-      position: absolute
-      width: 100%
-      top: 280px
-      left: 50%
-      padding-bottom: 20px
-      transform: translateX(-50%)
-      font-family: 'Cormorant Garamond', serif
-      font-size: 40px
-      color: #fff
-      text-shadow: 0 0 10px #000
-      text-align: center
-      
-      border-bottom: 3px solid #fff
-   &__text
-      position: absolute
-      bottom: 0
-      padding: 20px 0
-      z-index: 10000
-      text-align: center
-      color: #fff
-      background-color: $gray
-      opacity: 0
-      transition: opacity .8s ease
-   &:hover .presentation__text
-      opacity: 1
+	position: relative
+	height: 100vh
+	background: linear-gradient(#0000008c,#0000008c), url('img/library2.jpg') center center/cover no-repeat
+	&__heading
+		position: absolute
+		width: 100%
+		top: 280px
+		left: 50%
+		padding-bottom: 20px
+		transform: translateX(-50%)
+		font-family: 'Cormorant Garamond', serif
+		font-size: 40px
+		color: #fff
+		text-shadow: 0 0 10px #000
+		text-align: center
+		
+		border-bottom: 3px solid #fff
+	&__text
+		position: absolute
+		bottom: 0
+		padding: 20px 0
+		z-index: 10000
+		text-align: center
+		color: #fff
+		background-color: $gray
+		opacity: 0
+		transition: opacity .8s ease
+	&:hover .presentation__text
+		opacity: 1
+	&--grid
+		height: 300px
 
 // Example
 
 .example
-   padding: 40px 0
-   .container
-      .row
-         .col
-            margin: 10px 0
-            padding: 30px
-            border: 1px solid transparent
-            text-align: center
-            transition: all .3s ease
-            &:hover
-               border: 1px solid $gold
-            img
-               width: 200px
+	padding: 40px 0
+	.container
+		.row
+			.col
+				margin: 10px 0
+				padding: 30px
+				border: 1px solid transparent
+				text-align: center
+				transition: all .3s ease
+				&:hover
+					border: 1px solid $gold
+				img
+					width: 200px
 
 // Goods
 
 .goods
-   display: flex
-   flex-direction: column
-   justify-content: center
-   img
-      align-self: center
-   &__title
-      position: relative
-      padding-top: 30px
-      color: $gold
-      &::after
-         position: absolute
-         bottom: -25px
-         left: 50%
-         transform: translateX(-50%)
-         display: block
-         content: ''
-         height: 1px
-         background-color: $gray
-         width: 80px
-   &__descr
-      padding-top: 30px
-      text-transform: none
-      color: $gray
+	display: flex
+	flex-direction: column
+	justify-content: center
+	img
+		align-self: center
+	&__title
+		position: relative
+		padding-top: 30px
+		color: $gold
+		&::after
+			position: absolute
+			bottom: -25px
+			left: 50%
+			transform: translateX(-50%)
+			display: block
+			content: ''
+			height: 1px
+			background-color: $gray
+			width: 80px
+	&__descr
+		padding-top: 30px
+		text-transform: none
+		color: $gray
+	
+// Сategories
+
+.ctg
+	&__inner
+		display: grid
+		grid-template-columns: auto auto auto
+		grid-template-rows: auto auto auto
+		gap: 10px
+	&-1
+		grid-row: 1/2
+		grid-column: 1/3
