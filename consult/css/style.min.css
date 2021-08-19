@@ -144,7 +144,7 @@ p {
 }
 
 .bg {
-   background: url("../img/banner.jpg") center center/cover no-repeat;
+   background: url("../../img/banner.jpg") center center/cover no-repeat;
    background-position-y: -100px
 }
 
@@ -388,19 +388,19 @@ p {
 }
 
 .slide-1 {
-   background: url("../img/slider-1.png") center center/cover no-repeat
+   background: url("../../img/slider-1.png") center center/cover no-repeat
 }
 
 .slide-2 {
-   background: url("../img/slider-2.png") center center/cover no-repeat
+   background: url("../../img/slider-2.png") center center/cover no-repeat
 }
 
 .slide-3 {
-   background: url("../img/slider-3.png") center center/cover no-repeat
+   background: url("../../img/slider-3.png") center center/cover no-repeat
 }
 
 .slide-4 {
-   background: url("../img/slider-4.png") center center/cover no-repeat;
+   background: url("../../img/slider-4.png") center center/cover no-repeat;
    color: white
 }
 
@@ -430,7 +430,7 @@ p {
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
    content: "" !important;
-   background: url("../icons/arrow-right.svg") center center/contain no-repeat !important;
+   background: url("../../icons/arrow-right.svg") center center/contain no-repeat !important;
    display: inline-block;
    width: 44px;
    height: 20px
@@ -439,7 +439,7 @@ p {
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
    content: "" !important;
-   background: url("../icons/arrow-left.svg") center center/contain no-repeat !important;
+   background: url("../../icons/arrow-left.svg") center center/contain no-repeat !important;
    display: inline-block;
    width: 44px;
    height: 20px
@@ -460,7 +460,7 @@ p {
 
 .image-group {
    height: 419px;
-   background: url("../img/image-group.png") center center/contain no-repeat;
+   background: url("../../img/image-group.png") center center/contain no-repeat;
    width: 100%
 }
 
